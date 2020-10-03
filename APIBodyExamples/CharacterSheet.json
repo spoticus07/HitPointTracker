@@ -1,0 +1,57 @@
+{
+    "name": "Defaulty",
+    "level": 3,
+	"health":{
+		"hitPointsMax":35,
+		"hitPointsCurrent":15,
+		"hitPointsMaxMod":0,
+		"temporaryHitPoints":0
+	},
+    "classes": [
+      {
+      "name":"fighter",
+	  "level":2,
+      "hitDie":10
+
+      },
+      {
+        "name":"wizard",
+		"level":1,
+        "hitDie":6
+      }
+    ],
+    "stats":{
+      "strength":15,
+      "dexterity":12,
+      "constitution":14,
+      "intelligence":13,
+      "wisdom":10,
+      "charisma":8
+    },
+    "items":[
+      {
+        "name":"Ioun Stone of Fortitude",
+        "affectedObject":"stats",
+        "affectedValue":"constitution",
+        "value":2
+      }
+    ],
+    "defenses":[
+      {
+        "type":"fire",
+        "defense":"immunity"
+      },
+      {
+        "type":"slashing",
+        "defense":"resistance"
+      }
+    ],
+	"bonuses":[
+      {
+        "name":"Tough",
+        "affectedObject":"health",
+        "affectedValue":"hitDieMod",
+        "value":2
+      }
+    ]
+  }
